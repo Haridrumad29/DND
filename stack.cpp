@@ -1,112 +1,112 @@
-// #include <iostream>
-// using namespace std;
-//  class stack{
-//     int n =100;
-//     int*arr;
-//     int top;
-//     public:
-//     stack(){
-//         arr= new int[n];
-//         top =-1;
-
-//     }
-//     int push(int x){
-//         if(n==n-1){
-//         cout<<"stack overflow"<<endl;}
-//             top++;
-//             arr[top]=x;
-//     }
-//     void pop(){
-//     if(top==-1){
-//         cout<<"no elements to pop"<<endl;
-//         return;
-//     }
-//     top--;
-//     }
-//     int Top(){
-//         if (top== -1){
-//             cout<<"no elements on top"<<endl;
-//             return -1 ;
-//         }
-//         return arr [top];
-//     }
-//  };
-
-//  int main (){
-//     stack st;
-//     st.push(5);
-//     st.push(8); 
-//     st.push(9);
-//     cout<<st.Top()<<endl;
-//     st.pop();
-//     cout<<st.Top()<<endl;
-//     st.pop();
-//     st.pop();
-//     st.pop();
-
-//     return 0;
-
-//  }
-
-
-
 #include <iostream>
 using namespace std;
+ class stack{
+    int n =100;
+    int*arr;
+    int top;
+    public:
+    stack(){
+        arr= new int[n];
+        top =-1;
 
-class Stack {
-    int n=2;
-    int arr[2]; 
-    int top=-1;
-        //     n = 100;
-        // top = -1;
-
-public:
-    // Stack() {
-    //     // n = 100;
-    //     // top = -1;
-    // }
-
-    void push(int x) {
-        if (top >= n - 1) {
-            cout << "Stack overflow" << endl;
-            return;
-        }
-        arr[++top] = x;
     }
-
-    void pop() {
-        if (top == -1) {
-            cout << "No elements to pop" << endl;
-            return;
-        }
-        top--;
+    int push(int x){
+        if(n==n-1){
+        cout<<"stack overflow"<<endl;}
+            top++;
+            arr[top]=x;
     }
-
-    int Top() {
-        if (top == -1) {
-            cout << "No elements on top" << endl;
-            return -1;
-        }
-        return arr[top];
+    void pop(){
+    if(top==-1){
+        cout<<"no elements to pop"<<endl;
+        return;
     }
-    void display (){
-        for(int i=0;i<=top;i++){
-            cout<< arr[i]<<" ";
-        }
+    top--;
     }
-};
+    int Top(){
+        if (top== -1){
+            cout<<"no elements on top"<<endl;
+            return -1 ;
+        }
+        return arr [top];
+    }
+ };
 
-int main() {
-    Stack st;
+ int main (){
+    stack st;
     st.push(5);
-    st.push(8);
+    st.push(8); 
     st.push(9);
-    st.display();
-    cout<< endl << st.Top() << endl;
+    cout<<st.Top()<<endl;
     st.pop();
-    cout << st.Top() << endl;
+    cout<<st.Top()<<endl;
     st.pop();
     st.pop();
-    // st.pop();
+    st.pop();
+
     return 0;
-}
+
+ }
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// class Stack {
+//     int n=2;
+//     int arr[2]; 
+//     int top=-1;
+//         //     n = 100;
+//         // top = -1;
+
+// public:
+//     // Stack() {
+//     //     // n = 100;
+//     //     // top = -1;
+//     // }
+
+//     void push(int x) {
+//         if (top >= n - 1) {
+//             cout << "Stack overflow" << endl;
+//             return;
+//         }
+//         arr[++top] = x;
+//     }
+
+//     void pop() {
+//         if (top == -1) {
+//             cout << "No elements to pop" << endl;
+//             return;
+//         }
+//         top--;
+//     }
+
+//     int Top() {
+//         if (top == -1) {
+//             cout << "No elements on top" << endl;
+//             return -1;
+//         }
+//         return arr[top];
+//     }
+//     void display (){
+//         for(int i=0;i<=top;i++){
+//             cout<< arr[i]<<" ";
+//         }
+//     }
+// };
+
+// int main() {
+//     Stack st;
+//     st.push(5);
+//     st.push(8);
+//     st.push(9);
+//     st.display();
+//     cout<< endl << st.Top() << endl;
+//     st.pop();
+//     cout << st.Top() << endl;
+//     st.pop();
+//     st.pop();
+//     // st.pop();
+//     return 0;
+// }
