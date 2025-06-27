@@ -77,40 +77,40 @@
 //                       quick sort
 
 
-#include <iostream>
-using namespace std;
-void swap(int arr[],int i , int j){
-    // int temp=arr[i];
-    // arr[i]=arr[j];
-    // arr[j]=temp;
-    swap(arr[i],arr[j]);
-}
- int part(int arr[],int start,int end){
-    int pivot=arr[end];
-    int i=start-1;
-    for(int j=start ; j<end;j++){
-        if(arr[j]< pivot){
-            i++;
-            swap(arr,i,j);
-        }
-    }
-    swap(arr,i+1,end);
-    return i;
-}
-void quicksort(int arr[],int start, int end){
-    if(start<end){
-        int pi= part(arr,start,end);
-        quicksort(arr,start,pi-1);
-        quicksort(arr,pi+1,end);
-    }
-}
-int main(){
-    // int n;
-    int arr[5]={0,5,6,52,7};
-    quicksort(arr,0,4);
-    for(int i=0;i<5;i++){
-    cout<<arr[i]<<endl;
-    }
-}
+// #include <iostream>
+// using namespace std;
+// void swap(int arr[],int i , int j){
+//     // int temp=arr[i];
+//     // arr[i]=arr[j];
+//     // arr[j]=temp;
+//     swap(arr[i],arr[j]);
+// }
+//  int part(int arr[],int start,int end){
+//     int pivot=arr[end];
+//     int i=start-1;
+//     for(int j=start ; j<end;j++){
+//         if(arr[j]< pivot){
+//             i++;
+//             swap(arr,i,j);
+//         }
+//     }
+//     swap(arr,i+1,end);
+//     return i;
+// }
+// void quicksort(int arr[],int start, int end){
+//     if(start<end){
+//         int pi= part(arr,start,end);
+//         quicksort(arr,start,pi-1);
+//         quicksort(arr,pi+1,end);
+//     }
+// }
+// int main(){
+//     // int n;
+//     int arr[5]={0,5,6,52,7};
+//     quicksort(arr,0,4);
+//     for(int i=0;i<5;i++){
+//     cout<<arr[i]<<endl;
+//     }
+// }
 
 
