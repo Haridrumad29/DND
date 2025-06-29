@@ -103,34 +103,33 @@ int main() {
     Stack st;
     int choice, value;
     do {
-        cout << "\n--- Stack Menu ---\n";
-        cout << "1. Push\n";
-        cout << "2. Pop\n";
-        cout << "3. Peek\n";
-        cout << "4. Show\n";
-        cout << "5. Exit\n";
-        cout << "Enter your choice: ";
-        cin >> choice;
-        switch (choice) {
+        cout<<"1.Push\n";
+        cout<<"2.Pop\n";
+        cout<<"3.Peek\n";
+        cout<<"4.Show\n";
+        cout<<"5.Exit\n";
+        cout<<"Enter your choice:";
+        cin>>choice;
+        switch(choice){
             case 1:
-                cout << "Enter value to push: ";
-                cin >> value;
+                cout<<"Enter value to push:";
+                cin>>value;
                 st.push(value);
                 break;
             case 2:
                 st.pop();
                 break;
             case 3:
-                cout << "Top: " << st.peek() << endl;
+                cout<<"Top:"<<st.peek()<<endl;
                 break;
             case 4:
                 st.show();
                 break;
             case 5:
-                cout <<"Exiting..."<< endl;
+                cout<<"Exiting..."<<endl;
                 break;
             default:
-                cout <<"Invalid choice. Try again."<<endl;}
+                cout<<"Invalid choice. Try again."<<endl;}
     }while(choice!=5);
     return 0;
 }
