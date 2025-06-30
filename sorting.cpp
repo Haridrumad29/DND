@@ -10,8 +10,7 @@
 
 
 
-//           Merge sort
-
+//                                      Merge sort
 
 // #include<iostream>
 // using namespace std;
@@ -38,6 +37,7 @@
 //         k++;
 //         i++;
 //     }
+
 //     else{
 //         arr[k]=b[j];
 //         k++;
@@ -51,6 +51,7 @@
 //     k++;
 //     i++;
 // }
+
 // while(j<n2){
 //     arr[k]=b[j];
 //     k++;
@@ -58,6 +59,7 @@
 
 // }
 // }
+
 // void mergesort(int arr[],int start,int end){
 // if(start<end)
 // {
@@ -69,6 +71,7 @@
 //     merge(arr,start
 // ,mid,end);
 // }}
+
 // int main(){
 //  int arr[]={5,4,3,2,1,0};
 //  mergesort (arr,0,5);
@@ -76,7 +79,7 @@
 //     cout<<arr[i]<<" ";
 //  }}
 
-//                       quick sort
+//                                     quick sort
 
 
 // #include <iostream>
@@ -114,5 +117,8 @@
 //     cout<<arr[i]<<endl;
 //     }
 // }
+
+
+
 
 
