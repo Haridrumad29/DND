@@ -52,4 +52,45 @@ int main()
     q.enqueue(3);
     q.dequeue();
     q.display();
+  queue c;
+  int choice, value;
+
+do{
+  cout<<"1.ENQUEUE \n";
+  cout<<"2.DEQUEUE \n";
+  cout<<"3.DISPLAY \n";
+  cout<<"4.EXITING... \n";
+  cout<<"enter your choice-> ";
+  cin>>choice;
+
+  switch(choice){
+
+    case 1:
+    cout<<"enter the value to be enqueue: "<<endl;
+    cin>>value;
+    c.enqueue(value);
+    break;
+
+    case 2:
+    c.dequeue();
+      cout<<"value dequeued"<<endl;
+    break;
+
+    case 3:
+    cout<<"the elements in queue are : "<<endl;
+    c.display();
+    break;
+
+    case 4:
+     cout<<"EXIT"<<endl;
+     break;
+
+    default:
+    cout<<"INVALID"<<endl;
+  }
+
 }
+
+  while(choice<4);
+}
+
