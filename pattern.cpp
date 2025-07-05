@@ -28,7 +28,7 @@
 // #include <iostream>
 // using namespace std;
 
-// void printRotatedTriangle(int n)
+// void Diamunnnd(int n)
 // {
 
 //     for (int i = 1; i <= n; i++) {
@@ -57,7 +57,7 @@
 
 //     int n = 5;
 
-//     printRotatedTriangle(n);
+//     Diamunnnd(n);
 //     return 0;
 // }
 
@@ -66,7 +66,7 @@
 #include <iostream>
 using namespace std;
 
-void Diamond(int n)
+void Diamundd(int n)
 {
 
     for (int i = 1; i <= n; i++)
@@ -106,6 +106,6 @@ int main()
 {
 
     int n = 5;
-    Diamond(n);
+    Diamundd(n);
     return 0;
 }
